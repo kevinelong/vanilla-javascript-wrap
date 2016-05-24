@@ -1,0 +1,11 @@
+<script src="vanilla-javascript-wrap.js"></script>
+<h1>wrap demo</h1>
+Wrap <span id="target">Me!</span>
+<h1>wrapEach demo</h1>
+Wrap <span class="target">Me too!</span>
+Wrap <span class="target">Me three!</span>
+<script>
+    var t = document.getElementById("target");
+    wrap(t, document.createElement("b"));
+    wrapEach(".target", document.createElement("b"));
+</script>
